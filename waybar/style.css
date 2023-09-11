@@ -1,0 +1,24 @@
+* {
+    font-family: SF Pro, sans;
+    font-weight: 800;
+}
+
+window#waybar {
+    background: @theme_base_color;
+    color: @theme_text_color;
+    border-bottom: 2px solid @theme_selected_bg_color;
+}
+
+window .modules-left,
+window .modules-right {
+    padding: 0 15px;
+}
+
+#window {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#hardware * {
+    padding-left: 25px;
+}

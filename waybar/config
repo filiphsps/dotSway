@@ -1,0 +1,60 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 40,
+    "mode": "dock",
+    "start-hidden": true,
+
+    "modules-left": ["clock"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["group/hardware", "tray"],
+
+    "sway/mode": {
+        "format": " {}"
+    },
+    "sway/workspaces": {
+        "format": "{name}",
+        "disable-scroll": true
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": "{:%I.%M.%S %p}",
+        "timezone": "Europe/Stockholm"
+    },
+
+    "sway/window": {
+	    "icon": true,
+        "max-length": 25,
+        "tooltip": false
+    },
+
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "memory",
+            "network",
+            "battery"
+        ]
+    },
+    "cpu": {
+        "interval": 5,
+        "format": "{avg_frequency}GHz"
+    },
+    "memory": {
+        "interval": 5,
+        "format": "{used}GiB"
+    },
+    "network": {
+        "interval": 5,
+        "format": "{bandwidthTotalBits}"
+    },
+    "battery": {
+        "interval": 60,
+        "format": "{capacity}%"
+    },
+    "tray": {
+        "icon-size": 18
+    }
+}
