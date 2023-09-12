@@ -1,4 +1,4 @@
-# Sway
+# Sway config
 
 set $ac     #ED1E79
 set $se     #71A2B6
@@ -63,8 +63,16 @@ bindsym $mod+Shift+b        exec swaymsg border toggle
 
 # Load Modules -----------------------
 
-include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
 
+# Addons -----------------------------
+
+## Notification Daemon
+exec swaync
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
+## Menubar
 exec_always ~/.config/waybar/waybar.sh
+
+include /etc/sway/config.d/*
 

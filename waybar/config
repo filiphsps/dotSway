@@ -48,7 +48,7 @@
     },
     "network": {
         "interval": 5,
-        "format": "{bandwidthTotalBits}"
+        "format": "{ipaddr}"
     },
     "battery": {
         "interval": 60,
